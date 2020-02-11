@@ -4,17 +4,19 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-}
-* {
-  box-sizing: border-box;
+  line-height: 1.6;
 }
 
 .xand {
   &__header {
     min-height: 80vh;
     background: url("../img/indian.jpg") no-repeat;
+    background-position: 0 -50px;
     background-size: cover;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &::before {
       display: block;
       position: absolute;
@@ -27,9 +29,123 @@ body {
       content: "";
       margin-top: -250px;
     }
+    &-headline {
+      width: 420px;
+      height: 420px;
+      border-radius: 100%;
+      background-color: #f9e9d3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      position: relative;
+      z-index: 3;
+      &::before {
+        width: 380px;
+        height: 380px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #f6d5a0;
+        content: "";
+        border-radius: 100%;
+        z-index: 2;
+        transform: translate(20px, 20px);
+      }
+      &::after {
+        width: 340px;
+        height: 340px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #ef980c;
+        content: "";
+        border-radius: 100%;
+        z-index: 2;
+        transform: translate(40px, 40px);
+      }
+      p {
+        max-width: 180px;
+        text-align: center;
+        position: relative;
+        z-index: 4;
+      }
+    }
   }
-  &__nav {
+  &__header-text {
     min-height: 700px;
     background-color: #fef6e9;
+    margin-top: -40px;
+    &-group {
+      max-width: 850px;
+      padding-right: 100px;
+      margin-left: auto;
+      padding-top: 80px;
+    }
+    &-main {
+      color: #e68572;
+      font-size: 20px;
+    }
+    &-sub {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    &-statement {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      & > * {
+        max-width: 300px;
+        p {
+          color: #777;
+        }
+      }
+    }
   }
+  &__nav {
+    color: #222;
+    display: flex;
+    justify-content: flex-end;
+    &-item {
+      padding: 10px 30px;
+      text-transform: capitalize;
+      background-color: #fab140;
+      color: #fff;
+      align-self: flex-start;
+      margin-right: 5px;
+      text-decoration: none;
+      font-size: 20px;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      text-shadow: rgba(0, 0, 0, 0.01) 0px 0px 5px;
+      &.active {
+        padding: 8px 30px;
+      }
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dark-yellow {
+  background-color: #ef980c;
+}
+
+.red {
+  background-color: #e15517;
+}
+
+.green {
+  background-color: #20571b;
+}
+
+.text-green {
+  color: #20571b;
 }
