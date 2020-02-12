@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xand food</title>
     <link rel="stylesheet" href="index.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
   </head>
   <body>
     <header class="xand__header">
@@ -18,11 +19,11 @@
         <a href="#publication" class="xand__nav-item dark-yellow"
           >Publications</a
         >
-        <a href="#" class="xand__nav-item red">Menu</a>
+        <a href="#menu" class="xand__nav-item red">Menu</a>
         <a href="#contact" class="xand__nav-item green">Contact</a>
       </nav>
       <div class="xand__header-text-group">
-        <p class="xand__header-text-main">
+        <p class="xand__header-text-main" id="about">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit
           cupiditate officiis maxime amet ut dicta aliquid, harum distinctio
           placeat, tempora unde. Sint tempora ipsum reprehenderit praesentium
@@ -57,10 +58,11 @@
         </div>
       </div>
     </section>
-    <section class="xand__latest" id="publication">
+    <section class="xand__latest">
+      <a class="xand__latest-anchor" id="publication"></a>
       <div class="xand__latest-food">
         <img src="../img/food-tray.jpg" alt="Food tray" />
-        <div class="flex flex-h-bet flex-v-end">
+        <div class="flex flex-h-bet flex-v-end flex-wrap">
           <div class="xand__latest-issue">
             <h3 class="xand__latest-issue-heading">
               The Latest <br />
@@ -75,6 +77,155 @@
             View other publications
           </button>
         </div>
+      </div>
+    </section>
+    <section class="xand__dishes" id="menu">
+      <div class="xand__dishes-menu">
+        <button class="red">
+          <p>Porridge</p>
+        </button>
+        <button class="dark-yellow">
+          <p>Intercontinental</p>
+        </button>
+        <button class="light-yellow">
+          <p>Cake</p>
+        </button>
+        <button class="light-yellow">
+          <p>Cheese</p>
+        </button>
+        <button class="gold">
+          <p>Desert</p>
+        </button>
+      </div>
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide xand__dishes-dish">
+            <img src="../img/Asaro.jpg" alt="Asaro" />
+            <div class="xand__dishes-dish-content">
+              <h3>Porridge Yam</h3>
+              <h3 class="text-green">(Asaro)</h3>
+              <hr class="hr" />
+              <h4>Serving: 4</h4>
+              <p>1/2 tuber yam (medium)</p>
+              <p>1 cup shredded smoked chicken</p>
+              <p>1/2 cup dry oporo</p>
+              <p>2 knoor cube</p>
+              <p>1 tbsp crayfish grounded</p>
+              <p>8 hobonero peper</p>
+              <p>1 onion</p>
+              <p>2 cksp palm oil</p>
+              <h4>Prep Time: < 7min</h4>
+              <div class="xand__dishes-dish-description">
+                <p>peel yam, cube it, wash and set aside</p>
+                <p>Wash and shredd pepper roughly and aside</p>
+                <p>Wash oporo and soak then set aside</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide xand__dishes-dish">
+            <img src="../img/soup.jpg" alt="Soup" />
+            <div class="xand__dishes-dish-content">
+              <h3>Intercontinental Dish</h3>
+              <h3 class="text-green">(Soup)</h3>
+              <hr class="hr" />
+              <h4>Serving: 4</h4>
+              <p>1/2 tuber yam (medium)</p>
+              <p>1 cup shredded smoked chicken</p>
+              <p>1/2 cup dry oporo</p>
+              <p>2 knoor cube</p>
+              <p>1 tbsp crayfish grounded</p>
+              <p>8 hobonero peper</p>
+              <p>1 onion</p>
+              <p>2 cksp palm oil</p>
+              <h4>Prep Time: < 7min</h4>
+              <div class="xand__dishes-dish-description">
+                <p>peel yam, cube it, wash and set aside</p>
+                <p>Wash and shredd pepper roughly and aside</p>
+                <p>Wash oporo and soak then set aside</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide xand__dishes-dish">
+            <img src="../img/cake.jpg" alt="Cake" />
+            <div class="xand__dishes-dish-content">
+              <h3>Cake</h3>
+              <h3 class="text-green">(Kuchen)</h3>
+              <hr class="hr" />
+              <h4>Serving: 4</h4>
+              <p>1/2 tuber yam (medium)</p>
+              <p>1 cup shredded smoked chicken</p>
+              <p>1/2 cup dry oporo</p>
+              <p>2 knoor cube</p>
+              <p>1 tbsp crayfish grounded</p>
+              <p>8 hobonero peper</p>
+              <p>1 onion</p>
+              <p>2 cksp palm oil</p>
+              <h4>Prep Time: < 7min</h4>
+              <div class="xand__dishes-dish-description">
+                <p>peel yam, cube it, wash and set aside</p>
+                <p>Wash and shredd pepper roughly and aside</p>
+                <p>Wash oporo and soak then set aside</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide xand__dishes-dish">
+            <img src="../img/pizza.jpg" alt="Pizza" />
+            <div class="xand__dishes-dish-content">
+              <h3>Cheese</h3>
+              <h3 class="text-green">(Pizza)</h3>
+              <hr class="hr" />
+              <h4>Serving: 4</h4>
+              <p>1/2 tuber yam (medium)</p>
+              <p>1 cup shredded smoked chicken</p>
+              <p>1/2 cup dry oporo</p>
+              <p>2 knoor cube</p>
+              <p>1 tbsp crayfish grounded</p>
+              <p>8 hobonero peper</p>
+              <p>1 onion</p>
+              <p>2 cksp palm oil</p>
+              <h4>Prep Time: < 7min</h4>
+              <div class="xand__dishes-dish-description">
+                <p>peel yam, cube it, wash and set aside</p>
+                <p>Wash and shredd pepper roughly and aside</p>
+                <p>Wash oporo and soak then set aside</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide xand__dishes-dish">
+            <img src="../img/shakes.jpg" alt="Shakes" />
+            <div class="xand__dishes-dish-content">
+              <h3>Desert</h3>
+              <h3 class="text-green">(Shakes)</h3>
+              <hr class="hr" />
+              <h4>Serving: 4</h4>
+              <p>1/2 tuber yam (medium)</p>
+              <p>1 cup shredded smoked chicken</p>
+              <p>1/2 cup dry oporo</p>
+              <p>2 knoor cube</p>
+              <p>1 tbsp crayfish grounded</p>
+              <p>8 hobonero peper</p>
+              <p>1 onion</p>
+              <p>2 cksp palm oil</p>
+              <h4>Prep Time: < 7min</h4>
+              <div class="xand__dishes-dish-description">
+                <p>peel yam, cube it, wash and set aside</p>
+                <p>Wash and shredd pepper roughly and aside</p>
+                <p>Wash oporo and soak then set aside</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
     </section>
     <section class="xand__message">
@@ -188,5 +339,6 @@
         <img src="../img/check-logo.svg" alt="check dc logo" />
       </button>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
