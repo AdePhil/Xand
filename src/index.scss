@@ -13,7 +13,7 @@ body {
 
 .xand {
   &__header {
-    min-height: 80vh;
+    min-height: 85vh;
     background: url("../img/indian.jpg") no-repeat;
     background-position: 0 -50px;
     background-size: cover;
@@ -55,6 +55,12 @@ body {
       @media (max-width: 1126px) {
         margin-top: 190px;
       }
+
+      @media (max-width: 455px) {
+        width: 300px;
+        height: 300px;
+      }
+
       &::before {
         width: 380px;
         height: 380px;
@@ -66,6 +72,10 @@ body {
         border-radius: 100%;
         z-index: 2;
         transform: translate(20px, 20px);
+        @media (max-width: 455px) {
+          width: 260px;
+          height: 260px;
+        }
       }
       &::after {
         width: 340px;
@@ -78,6 +88,10 @@ body {
         border-radius: 100%;
         z-index: 2;
         transform: translate(40px, 40px);
+        @media (max-width: 455px) {
+          width: 220px;
+          height: 220px;
+        }
       }
       p {
         max-width: 180px;
@@ -142,6 +156,14 @@ body {
     color: #222;
     display: flex;
     justify-content: flex-end;
+    svg {
+      display: none;
+      @media (max-width: 550px) {
+        display: block;
+        width: 30px;
+        fill: #fff;
+      }
+    }
     @media (max-width: 550px) {
       position: fixed;
       z-index: 100;
@@ -161,16 +183,25 @@ body {
       position: relative;
       z-index: 1;
       text-shadow: rgba(0, 0, 0, 0.01) 0px 0px 5px;
+      &:last-child {
+        margin-right: 0;
+      }
       @media (max-width: 550px) {
         margin: 0;
         flex: 1;
         font-size: 15px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
       }
       &.active {
         padding: 8px 30px;
         @media (max-width: 550px) {
-          padding: 10px 30px;
+          // padding: 10px 30px;
+          padding: 5px;
         }
       }
     }
